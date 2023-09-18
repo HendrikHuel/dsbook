@@ -3,6 +3,9 @@
 !environment.yml
 !config/lgb_config.yaml
 
+# metaflow
+metaflow/*
+
 # Creds
 config/credentials.yaml
 config/app_prognose_auth.yaml

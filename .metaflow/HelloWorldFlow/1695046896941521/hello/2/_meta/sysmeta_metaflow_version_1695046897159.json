@@ -1,1 +1,0 @@
-{"flow_id": "HelloWorldFlow", "run_number": "1695046896941521", "step_name": "hello", "task_id": "2", "field_name": "metaflow_version", "type": "metaflow_version", "value": "2.9.13", "tags": ["attempt_id:0"], "user_name": "hhuelsbusch", "ts_epoch": 1695046897159}
