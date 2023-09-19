@@ -43,7 +43,7 @@ docs/
 *.bin
 
 # general
-*.csv
+#*.csv
 *.CSV
 *.feather
 *.hdf
