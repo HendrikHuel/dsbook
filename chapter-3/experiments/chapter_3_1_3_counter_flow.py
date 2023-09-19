@@ -10,7 +10,7 @@ class CounterFlow(FlowSpec):
 
     @step
     def add(self):
-        """Just say hi."""
+        """Increment by 1."""
         print(f"The count is {self.count} before incrementing.")
         self.count += 1
         self.next(self.end)
