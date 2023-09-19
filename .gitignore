@@ -5,6 +5,7 @@
 
 # metaflow
 .metaflow/*
+*/.metaflow/*
 
 # Creds
 config/credentials.yaml
