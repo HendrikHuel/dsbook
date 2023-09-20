@@ -4,8 +4,8 @@
 !config/lgb_config.yaml
 
 # metaflow
-.metaflow/*
-*/.metaflow/*
+.metaflow
+**/.metaflow
 
 # Creds
 config/credentials.yaml
