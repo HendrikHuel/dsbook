@@ -2,7 +2,7 @@ from metaflow import FlowSpec, step, Flow, Parameter, JSONType
 
 
 class FullClassifierPredictFlow(FlowSpec):
-    vector = Parameter("vector", type=JSONType, required=True)
+    vector = Parameter("vector", type=JSONType, default='[14, 2, 3, 20, 120, 3, 3, 0.3, 2, 6, 1, 3, 1280]')
 
     @step
     def start(self):
@@ -18,8 +18,9 @@ class FullClassifierPredictFlow(FlowSpec):
     @step
     def end(self):
         """Use model to do stuff."""
+        self.prediction = self.model.predict([self.vector])
         print(f"Model: {self.model}")
-        print(f"Predicted classes: {self.model.predict([self.vector])[0]}")
+        print(f"Predicted classes: {self.prediction[0]}")
 
 
 if __name__ == "__main__":
